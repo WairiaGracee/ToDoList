@@ -18,8 +18,10 @@ body {
 
 /* Container for Grid Layout */
 .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;  */
+    display: flex;
+    justify-content: center;
     width: 100%;
     height: 100vh;
     background-color: #fff;
@@ -28,14 +30,14 @@ body {
 /* Form Section */
 .divider{
     border: none;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #eae1e166;
     margin: 15px 0; 
-    width: 350px;
+    width: 480px;
 }
 .btn-google{
-    border: 1px solid #bbbbbb;
-    padding: 8px 40px;
-    width: 350px;
+    border: 1px solid #eae1e166;
+    padding: 15px 40px;
+    width: 480px;
     margin: 10px;
     border-radius: 5px;
     display: flex;
@@ -44,7 +46,7 @@ body {
     transition: 0.6s;
 }
 .btn-google:hover{
-    background-color: #d3d1d1;
+    background-color: #e6e4e4;
 }
 .btn-google img {
     width: 30px;
@@ -65,6 +67,8 @@ body {
     color: black;
     text-align: center;
     width: 200px;
+    font-weight: 560;
+    font-size: 17px;
 }
 img {
     vertical-align: middle;
@@ -76,12 +80,16 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-left: 280px;
     /* background-color: #fff; */
 }
 
-h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
+.form-section h1 {
+    width: 480px;
+    text-align: left;
+    font-weight: 800;
+    font-size: 3em;
+    margin-bottom: 40px;
     color: #333;
 }
 
@@ -89,8 +97,8 @@ h1 {
     font-family: "Acme", sans-serif;
     margin-bottom: 15px;
     text-align: left;
-    width: 350px;
-    border: 1.5px solid #ccc;
+    width: 480px;
+    border: 1.5px solid #eae1e166;
     border-radius: 3px;
 }
 
@@ -109,13 +117,23 @@ input {
     padding: 0px 10px 10px 10px;
 }
 
+input:focus {
+    outline: none; /* Removes rectangular box */
+    /* border: 2px solid #4CAF50; Optional focus border */
+    /* box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); Optional glow */
+    cursor: text; /* Ensures cursor appears */
+    background-color: white;
+}
+
+
 form button {
     background-color: #103bbc;
     color: white;
     border: none;
     border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 19px 20px;
+    font-weight: 550;
+    font-size: 22px;
     cursor: pointer;
     width: 100%;
     margin-top: 10px;
@@ -133,12 +151,33 @@ form button:hover {
 
 p {
     margin-top: 10px;
+    font-size: 17px;
 }
 
 a {
     color: #4CAF50;
     text-decoration: none;
 }
+
+/* Forgot Password Link Styling */
+.forgot-password-link {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #103bbc;
+    text-decoration: underline;
+    text-align: left;
+    width: 480px;
+    transition: 0.7s;
+}
+
+.forgot-password-link:hover {
+    text-decoration: underline;
+    color: #092b91;
+    letter-spacing: 1px;
+}
+
 
 /* Image Section */
 .image-section {
@@ -152,8 +191,8 @@ a {
 .image-section img {
     max-width: 100%;
     height: 100%;
-    width: 70%;
+    width: 59%;
     border-radius: 10px;
     object-fit: contain;
-    margin-left: -230px;
+    margin-left: -180px;
 }
