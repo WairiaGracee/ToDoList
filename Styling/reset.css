@@ -9,13 +9,23 @@ body {
     margin: 0;
 }
 
-.container {
-    width: 400px;
-    background-color: #fff;
+.form-section2 {
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+.form-section2 h1 {
+    width: 480px;
+    text-align: left;
+    font-weight: 800;
+    font-size: 3em;
+    margin-bottom: 40px;
+    color: #333;
+}
+
 
 h1 {
     font-size: 24px;
@@ -24,9 +34,10 @@ h1 {
 }
 
 p {
-    font-size: 14px;
+    font-size: 18px;
+    font-weight: 550;
     color: #555;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .form-group {
@@ -39,23 +50,35 @@ label {
     font-weight: bold;
 }
 
+
 input {
     width: 100%;
     padding: 10px;
+    border: none;
     font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    padding: 0px 10px 10px 10px;
 }
 
-button {
-    width: 100%;
-    background-color: #4CAF50;
+input:focus {
+    outline: none; /* Removes rectangular box */
+    /* border: 2px solid #4CAF50; Optional focus border */
+    /* box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); Optional glow */
+    cursor: text; /* Ensures cursor appears */
+    background-color: white;
+}
+
+
+form button {
+    background-color: #103bbc;
     color: white;
     border: none;
     border-radius: 5px;
-    padding: 10px;
-    font-size: 16px;
+    padding: 19px 20px;
+    font-weight: 550;
+    font-size: 22px;
     cursor: pointer;
+    width: 100%;
+    margin-top: 40px;
 }
 
 button:hover {
@@ -67,11 +90,12 @@ button:hover {
     margin-top: 20px;
     text-align: center;
     font-size: 14px;
-    color: #4CAF50;
+    color: #061d63;
     text-decoration: none;
+    font-size: 18px;
 }
 
 .back-to-login:hover {
     text-decoration: underline;
-    color: #45a049;
+    color: #5f73ab;
 }
