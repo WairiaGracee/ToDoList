@@ -4,3 +4,17 @@
   font-family: "poppins", sans-serif;
   box-sizing: border-box;
 }
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, black, darkblue);
+  padding: 10px;
+}
+.Todolist {
+  width: 100%;
+  max-width: 540px;
+  background: #fff;
+  margin: 40px, auto, 20px;
+  padding: 40px, 30px, 70px;
+  border-radius: 10px;
+}
