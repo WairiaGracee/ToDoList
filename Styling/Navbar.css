@@ -8,7 +8,7 @@
   font-family: "Open Sans", sans-serif;
 }
 
-body {
+section {
   height: 100vh;
   width: 100%;
   background: linear-gradient(to bottom, #175d69 23%, #330c43 95%);
@@ -84,4 +84,30 @@ body {
   .hero-section img {
     display: none;
   }
+}
+
+footer {
+  color: white;
+}
+
+.footer {
+  background-color: #198754;
+}
+
+.footer-content h2 {
+  color: #fff;
+}
+
+.footer-content h5,
+.footer-content p,
+.footer-links a {
+  color: #fff;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer hr {
+  background-color: #fff;
 }
