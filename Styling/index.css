@@ -1,0 +1,164 @@
+/* Reset and Global Styles */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  padding-top: 50px;
+}
+
+/* Navbar */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+nav .navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 12px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+/* Hero Section */
+section {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to bottom, #175d69 23%, #330c43 95%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.hero {
+  max-width: 50%;
+  color: white;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #c9c7c7;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.buttons a {
+  text-decoration: none;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.buttons .join {
+  background-color: #47b2e4;
+}
+
+.buttons .learn {
+  border: 1px solid white;
+}
+.img img {
+  width: 400px;
+  max-width: 100%;
+}
+
+/* Footer */
+footer {
+  background-color: #198754;
+  color: white;
+  padding: 20px;
+}
+
+footer .row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+footer .col {
+  flex: 1;
+  padding: 10px;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li {
+  margin-bottom: 10px;
+}
+
+footer ul li a {
+  color: white;
+  text-decoration: none;
+}
+footer ul li a:hover {
+  text-decoration: underline;
+}
+
+footer hr {
+  border-color: white;
+}
+
+@media (max-width: 768px) {
+  section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero {
+    max-width: 100%;
+  }
+
+  .img {
+    margin-top: 20px;
+  }
+
+  footer .row {
+    flex-direction: column;
+    text-align: center;
+  }
+}
