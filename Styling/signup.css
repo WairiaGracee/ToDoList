@@ -1,0 +1,39 @@
+nav {
+  position: fixed; /* Fixes the navbar to the viewport */
+  top: 0;
+  left: 0;
+  width: 100%; /* Makes the navbar span the full width of the page */
+  background-color: #333; /* Background color of the navbar */
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; /* Adds spacing inside the navbar */
+  z-index: 1000; /* Ensures the navbar appears above other content */
+}
+
+nav .navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 12px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}

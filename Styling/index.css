@@ -9,7 +9,7 @@
 }
 
 body {
-  padding-top: 50px;
+  padding-top: 60px;
   height: 100vh;
   width: 100%;
   background: linear-gradient(to bottom, #175d69 23%, #330c43 95%);
@@ -17,17 +17,17 @@ body {
 
 /* Navbar */
 nav {
-  position: fixed;
+  position: fixed; /* Fixes the navbar to the viewport */
   top: 0;
   left: 0;
-  width: 100%;
-  background-color: #333;
+  width: 100%; /* Makes the navbar span the full width of the page */
+  background-color: #333; /* Background color of the navbar */
   color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
-  z-index: 1000;
+  padding: 10px 20px; /* Adds spacing inside the navbar */
+  z-index: 1000; /* Ensures the navbar appears above other content */
 }
 
 nav .navbar-brand {
