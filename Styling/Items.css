@@ -31,6 +31,7 @@ nav ul {
 
 nav ul li {
   display: inline;
+  list-style: none;
 }
 
 nav ul li a {
@@ -38,6 +39,7 @@ nav ul li a {
   color: white;
   padding: 8px 12px;
   transition: background-color 0.3s;
+  list-style: none;
 }
 
 nav ul li a:hover {
