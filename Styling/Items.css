@@ -32,6 +32,7 @@ nav ul {
 nav ul li {
   display: inline;
   list-style: none;
+  background-image: none;
 }
 
 nav ul li a {
@@ -45,6 +46,7 @@ nav ul li a {
 nav ul li a:hover {
   background-color: #555;
   border-radius: 5px;
+  background-image: none;
 }
 
 .container {
@@ -111,7 +113,7 @@ ul li::before {
   height: 28px;
   width: 28px;
   border-radius: 50%;
-  background-image: url(../images/unchecked.png);
+  /*background-image: url(../images/unchecked.png);*/
   background-size: cover;
   background-position: center;
   top: 12px;
